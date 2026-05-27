@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">attendance</string>
+    <string name="app_name">Attendance</string>
+    <string name="label_start">出席開始時刻</string>
+    <string name="label_status">現在の状態</string>
+    <string name="default_time">"default_time"</string>
+    <string name="default_status">判定待ち</string>
+
+    <!-- 登録画面用 -->
+    <string name="title_registration">初期登録</string>
+    <string name="hint_student_id">学籍番号 (例: 252808)</string>
+    <string name="hint_user_name">氏名 (例: 山田 太郎)</string>
+    <string name="btn_register_start">登録して開始</string>
+    <string name="error_empty_input">学籍番号と名前を入力してください</string>
+
+    <!-- メイン画面表示用 -->
+    <string name="user_info_format">%1$s : %2$s</string> <!-- 学籍番号 : 名前 の形式 -->
+    <string name="btn_test_send">テスト送信を実行</string>
 </resources>
