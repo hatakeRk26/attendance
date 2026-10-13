@@ -13,6 +13,10 @@
     <string name="error_empty_input">学籍番号と名前を入力してください</string>
 
     <!-- メイン画面表示用 -->
-    <string name="user_info_format">%1$s : %2$s</string> <!-- 学籍番号 : 名前 の形式 -->
+    <string name="user_info_format">%1$s : %2$s</string>
     <string name="btn_test_send">テスト送信を実行</string>
+
+    <!-- 判定結果表示用 -->
+    <string name="status_success">出席済み</string>
+    <string name="status_error_format">エラー (%1$s)</string>
 </resources>

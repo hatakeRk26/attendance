@@ -7,50 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- 1. 出席開始時刻のラベル -->
+    <!-- 1. 現在の状態のラベル (制約を親要素のTOPに変更) -->
     <TextView
-        android:id="@+id/tvLabelStart"
+        android:id="@+id/tvLabelStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/label_start"
+        android:layout_marginTop="150dp"
+        android:text="@string/label_status"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- 2. 時刻を表示する場所 (ID: tvStartTimeValue) -->
-    <TextView
-        android:id="@+id/tvStartTimeValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLabelStart" />
-
-    <!-- 3. 現在の状態のラベル -->
-    <TextView
-        android:id="@+id/tvLabelStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="@string/label_status"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvStartTimeValue" />
-
-    <!-- 4. 出席判定を表示する場所 (ID: tvStatusValue) -->
+    <!-- 2. 出席判定を表示する場所 -->
     <TextView
         android:id="@+id/tvStatusValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/default_status"
         android:textColor="#757575"
         android:textSize="32sp"
@@ -59,26 +33,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLabelStatus" />
 
+    <!-- 3. 下部のユーザー情報 -->
     <TextView
         android:id="@+id/textUserInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="@string/label_status"
+        android:text="@string/user_info_format"
         android:textColor="#888888"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- 追加：テスト送信ボタン -->
-    <Button
-        android:id="@+id/btnTestSend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/btn_test_send"
-        app:layout_constraintBottom_toTopOf="@id/textUserInfo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
